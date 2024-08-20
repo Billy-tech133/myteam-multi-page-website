@@ -13,6 +13,8 @@ body,
   height: 100%;
   margin: 0;
   font-family:"livvic", sans-serif;
+  font-weight: 200;
   @apply: text-white;
 }
+
 

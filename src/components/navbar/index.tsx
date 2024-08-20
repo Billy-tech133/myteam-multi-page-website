@@ -14,7 +14,7 @@ import { myContext } from '@/Context'
 const Navbar = () => {
 
 const {changeToggleMenu, toggleMenu,} = myContext()
-const MenuMediaQuery = useMediaQuery('(min-width: 1080px)')
+const MenuMediaQuery = useMediaQuery('(min-width: 760px)')
 
   return (
     <nav>
@@ -48,7 +48,7 @@ const MenuMediaQuery = useMediaQuery('(min-width: 1080px)')
       </div>
     </div>
     {/* <Menu /> */}
-    {!MenuMediaQuery && !toggleMenu && (
+    {!MenuMediaQuery && toggleMenu && (
     <Menu />
     )}
     </nav>

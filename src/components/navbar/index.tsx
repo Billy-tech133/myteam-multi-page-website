@@ -19,7 +19,7 @@ const MenuMediaQuery = useMediaQuery('(min-width: 760px)')
   return (
     <nav>
     <div>
-      <div className="flex justify-between items-center w-[80%] mx-auto my-auto pt-8 h-20 p-0">
+      <div className="flex justify-between items-center w-[80%] md:w-[70%] mx-auto my-auto pt-8 h-20 p-0">
       <Link to="/"> 
           <img className="h-8" src={Logo} alt="home-page" />
       </Link>

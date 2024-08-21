@@ -1,6 +1,6 @@
 import { MinusIcon } from "@heroicons/react/16/solid"
-import useMediaQuery from "@/hooks/useMediaQuery"
 import { teamType } from "@/shared/types"
+import GetStarted from "../getstarted"
 import { successStoryType } from "@/shared/types"
 import homeImage2 from "@/assets/bg-pattern-home-2.svg"
 import homeImage1 from "@/assets/bg-pattern-home-1.svg"
@@ -106,7 +106,7 @@ const Home = () => {
       <div className="relative bg-midnightgreen">
         <img src={homeImage4} alt={`${homeImage4}`} />
         <img className="absolute bottom-0 right-0" src={homeImage5} alt={`${homeImage5}`} />
-        <div className="flex flex-col text-center w-[90%] my-16 mx-auto md:w-[80%]">
+        <div className="flex flex-col text-center w-[90%]  mx-auto md:w-[80%]">
             <h1 className="font-bold text-3xl sm:text-5xl">Delivering real results for top companies. Some of our <span className="text-raptureblue">success stories.</span></h1>
           <div className="md:flex justify-between">
             {storries.map((item: successStoryType, index) =>(
@@ -121,6 +121,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <GetStarted />
     </section>
   )
 }

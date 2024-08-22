@@ -11,3 +11,10 @@ export interface successStoryType {
     role: string;
     story: string
 }
+
+export interface directors {
+    image: string;
+    name: string;
+    role: string;
+    
+}

@@ -18,3 +18,8 @@ export interface directors {
     role: string;
     
 }
+
+export interface contactUs {
+    icon: string;
+    desc: string;
+}
